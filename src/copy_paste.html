@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Prisma Access Demo - COPY PASTE</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Prisma Access Demo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="copy_paste.html">Copy Paste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="input.html">Input Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="credit_card.html">Credit Card Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="misc.html">Miscellaneous Page</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- DEMO COPY PASTE FIELD -->
+    <div class="container mt-5">
+        <h1>Welcome to Prisma Access Demo 1 "Copy Paste"</h1>
+        <p>In our Prisma Access Browser (PAB) demo, we’re highlighting powerful data protection capabilities that provide fine-grained control over copy-paste actions.</p>
+        <p>With PAB, you can restrict data copied from within the secure browser to ensure that sensitive information doesn’t inadvertently or maliciously leave the protected environment.</p>
+        <p>For instance, by setting copy-paste controls, we prevent data from being pasted outside the PAB session, stopping the transfer of confidential information to unauthorized applications or devices.</p>
+        <p>This helps organizations enforce strict data handling policies and reduces the risk of data leakage, whether accidental or intentional.</p>
+    </div>
+
+    <!-- EXAMPLE A -->
+    <div class="container mt-5">
+        <h1>Example A</h1>
+        <li>1. Copy the text within the quotation marks: "Part-Number: AF56 Customer-ID: 7994031 Credit-Card-Number: 5293-8502-0071-xxx".</li>
+        <li>2. Paste the information within the input-field bellow.</li>
+
+        <!-- INPUT FIELD -->
+        <h2>Input Form Page</h2>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Input Data</label>
+                <input type="text" class="form-control" id="exampleInput" placeholder="Enter something...">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <li>3. Try to paste the information outside the private application, in a new window inside Prisma Access Browser.</li>
+        <li>4. Try to paste the information outside Prisma Access Browser, for example in NotePad.</li>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
