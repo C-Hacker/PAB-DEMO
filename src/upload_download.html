@@ -42,21 +42,22 @@
         </div>
     </nav>
     <!-- DEMO COPY PASTE FIELD -->
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <h1>Welcome to Prisma Access Demo 3 "Upload Download"</h1>
         <p>In our Prisma Access Browser (PAB) demo, we’re highlighting powerful data protection capabilities that provide fine-grained control over copy-paste actions.</p>
         <p>A key capability is ensuring that sensitive data downloaded onto devices is securely protected through encryption.</p>
 
         <h2>Download a sensitive corporate document</h3>
+        <p>In this example, you’ll download a file containing sensitive information.</p>
+
         <div class="card">
-            <div class="card-body">
-                <p>In this example, you’ll download a file containing sensitive information.</p>
-                <a href="/dlp-1.txt" download>Click here to download the sample DLP file</a>
-                <p class="fw-bold">In the top-right corner, click “Keep” to proceed with the download.</p>
-                <p>When you begin the download, a warning message will appear; click "Proceed" to continue.</p>
-                <p>After downloading, open the "Download" folder. Right-click the file, select "Open with," click choose more and select Notepad.</p>
+            <div class="card-body">        
+                <a href="/dlp-1.txt" download>1. Click here to download the sample DLP file</a>
+                <p class="fw-bold">2. In the top-right corner, click “Keep” to proceed with the download.</p>
+                <p>3. When you begin the download, a warning message will appear; click "Proceed" to continue.</p>
+                <p>4. After downloading, open the "Download" folder. Right-click the file, select "Open with," click choose more and select Notepad.</p>
                 <p class="fw-bold">You’ll notice the file opens in Notepad, but the data is encrypted and unreadable.</p>
-                <p>Next, open the same file within the Prisma Access Browser.</p>
+                <p>5. Next, open the same file within the Prisma Access Browser.</p>
                 <p class="fw-bold">The file can only be read (decrypted) when opened with the Prisma Access Browser.</p>
             </div>
         </div>
@@ -69,7 +70,8 @@
             <div class="card-body">
                 <p>File uploads are permitted without scanning for sensitive data, as data is uploaded to a secure corporate applications.</p>
                 <p>However, to protect our organization, we enforce measures to ensure only legitimate files are uploaded, guarding against threats like malware, spyware, and ransomware.</p>
-                
+                <br>
+                <p>Upload the test "eicar" file.</p>
                 <form action="/upload" method="post" enctype="multipart/form-data">
                     <input type="file" name="file" required>
                 </form>
