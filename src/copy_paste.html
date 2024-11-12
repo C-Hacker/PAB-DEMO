@@ -46,46 +46,49 @@
         <h1>Welcome to Prisma Access Demo 1 "Copy Paste"</h1>
         <p>In our Prisma Access Browser (PAB) demo, we’re highlighting powerful data protection capabilities that provide fine-grained control over copy-paste actions.</p>
         <p>With PAB, you can restrict data copied from within the secure browser to ensure that sensitive information doesn’t inadvertently or maliciously leave the protected environment.</p>
-        <p>For instance, by setting copy-paste controls, we prevent data from being pasted outside the PAB session, stopping the transfer of confidential information to unauthorized applications or devices.</p>
-        <p>This helps organizations enforce strict data handling policies and reduces the risk of data leakage, whether accidental or intentional.</p>
+        <p class="fw-bold">For instance, by setting copy-paste controls, we prevent data from being pasted outside the PAB session, stopping the transfer of confidential information to unauthorized applications or devices.</p>
+        <p class="fw-bold">This helps organizations enforce strict data handling policies and reduces the risk of data leakage, whether accidental or intentional.</p>
     </div>
 
     <!-- EXAMPLE A -->
     <div class="container mt-5">
         <h1>Scenario A</h1>
-        
        
         <div class="card">
             <div class="card-body">
                 1. Copy the text within the quotation marks: "Part-Number: AF56 Customer-ID: 7994031 Credit-Card-Number: 5293-8502-0071-xxx".
             </div>
         </div>
+        <br>
 
         <div class="card">
             <div class="card-body">
-                2. Paste the information within the input-field bellow.
+                <p>2. Paste the information within the input-field bellow.</p>
+                <!-- INPUT FIELD -->
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInput" class="form-label">Input-field:</label>
+                        <input type="text" class="form-control" id="exampleInput" placeholder="Enter something...">
+                    </div>            
+                </form>
             </div>
         </div>
+        <br>
 
-        <!-- INPUT FIELD -->
-        <form>
-            <div class="mb-3">
-                <label for="exampleInput" class="form-label">Input-field:</label>
-                <input type="text" class="form-control" id="exampleInput" placeholder="Enter something...">
-            </div>            
-        </form>
 
         <div class="card">
             <div class="card-body">
                 3. Try to paste the information outside the private application, in a new window inside Prisma Access Browser.
             </div>
         </div>
+        <br>
 
         <div class="card">
             <div class="card-body">
                 4. Try to paste the information outside Prisma Access Browser, for example in NotePad.
             </div>
         </div>
+        <br>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

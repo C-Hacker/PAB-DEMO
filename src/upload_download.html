@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Prisma Access Demo</a>
+            <a class="navbar-brand" href="#">PAB DEMO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -19,20 +19,24 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="copy_paste.html">Copy Paste</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="upload_download.html">Upload Download</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="input.html">Input Form</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="credit_card.html">Credit Card Information</a>
+                        <a class="nav-link" href="copy_paste.html">Copy & Paste</a>
                     </li>
+		            <li class="nav-item">
+                        <a class="nav-link" href="upload_download.html">Upload & Download</a>
+                    </li>
+		            <li class="nav-item">
+                        <a class="nav-link" href="screenshot.html">Screenshot</a>
+                    </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="misc.html">Miscellaneous Page</a>
-                    </li>
+                        <a class="nav-link" href="credit_card.html">Credit Card Information</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="extensions.html">Extensions</a>
+                    </li>              
                 </ul>
             </div>
         </div>
@@ -41,32 +45,39 @@
     <div class="container mt-5">
         <h1>Welcome to Prisma Access Demo 3 "Upload Download"</h1>
         <p>In our Prisma Access Browser (PAB) demo, we’re highlighting powerful data protection capabilities that provide fine-grained control over copy-paste actions.</p>
-        <br>
-        <br>
         <p>A key capability is ensuring that sensitive data downloaded onto devices is securely protected through encryption.</p>
 
-        <h3>Example A</h3>
-
-        <p>In this example, you’ll download a file containing sensitive information. When you begin the download, a warning message will appear; click "Proceed" to continue.</p>
-
-        <br>
-        <a href="/dlp-1.txt" download>Click here to download the sample DLP file</a>
-        <br>
-        <p>After downloading, right-click the file, select "Open with," and choose Notepad. You’ll notice the file opens in Notepad, but the data is encrypted and unreadable.</p>
-        <p>Next, open the same file within the Prisma Access Browser. Here, the data is decrypted seamlessly, making it fully readable.</p>
-
-
+        <h3>Scenario A</h3>
+        
+        <div class="card">
+            <div class="card-body">
+                <p>In this example, you’ll download a file containing sensitive information. When you begin the download, a warning message will appear; click "Proceed" to continue.</p>
+                <br>
+                <a href="/dlp-1.txt" download>Click here to download the sample DLP file</a>
+                <br>
+                <p>In the top-right corner, click “Keep” to proceed with the download.</p>
+                <p>After downloading, open the "Download" folder. Right-click the file, select "Open with," click choose more and select Notepad.</p>
+                <p class="fw-bold">You’ll notice the file opens in Notepad, but the data is encrypted and unreadable.</p>
+                <p>Next, open the same file within the Prisma Access Browser.</p>
+                <p class="fw-bold">The file can only be read (decrypted) when opened with the Prisma Access Browser.</p>
+            </div>
+        </div>
     </div>
 
     <div class="container mt-5">
-
-        <p>File uploads are permitted, as data is directed to secure corporate applications. However, to protect our organization, we enforce measures to ensure only legitimate files are uploaded, guarding against threats like malware, spyware, and ransomware.</p>
         <h2>Upload a File</h2>
 
-        <form action="/upload" method="post" enctype="multipart/form-data">
-            <input type="file" name="file" required>
-            <button type="submit">Upload</button>
-        </form>
+        <div class="card">
+            <div class="card-body">
+                <p>File uploads are permitted without scanning for sensitive data, as data is uploaded to a secure corporate applications.</p>
+                <p>However, to protect our organization, we enforce measures to ensure only legitimate files are uploaded, guarding against threats like malware, spyware, and ransomware.</p>
+                
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" required>
+                </form>
+            </div>
+        </div>
+       
     </div>
 
 
