@@ -10,7 +10,7 @@
 * Instructions to create a docker-compose.yml file.
 * Steps to add HTML pages in the /docker-compose/nginx/src directory.
 * Mention of specific HTML files: input.html, credit_card.html, and misc.html.
-* URL provided to access the webserver: (http://1921.168.144.77:8000)
+* URL provided to access the webserver: (http://192.168.144.77:8000)
 
 ## Docker install:
 https://docs.docker.com/engine/install/
